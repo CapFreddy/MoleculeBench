@@ -18,7 +18,7 @@ Benchmarking MoleculeNet datasets with unified pre-processing and data splits.
 We provide the script for downloading the raw datasets from the official website of [MoleculeNet](https://moleculenet.org/).
 
 ```bash
-cd src/MoleculeBench/datasets/raw
+cd src/MoleculeBench/dataset/raw
 bash download.sh
 ```
 
