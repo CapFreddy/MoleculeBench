@@ -1,0 +1,9 @@
+# Large dataset files
+src/MoleculeBench/dataset/raw/zinc_combined_apr_8_2019.csv
+src/MoleculeBench/dataset/processed/zinc2m.csv
+
+# Byte-compiled
+__pycache__/
+
+# Packaging
+*.egg-info
