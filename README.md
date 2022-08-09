@@ -36,7 +36,7 @@ pip install -e .
 This package supports **loading** and **splitting** datasets.
 
 ### Loading
-Load datasets or SMILES in datasets after three steps of pre-processing:
+Load datasets or SMILES in datasets after three steps of pre-processing.
 
 - Filter SMILES that contains asterisks (*), which causes size mismatch with pretrained embeddings
 - Filter unparsable SMILES
@@ -51,12 +51,12 @@ filtered_and_canonicalized_smiles('bace')
 ```
 
 ### Splitting
-This package provides two APIs for splitting:
+This package provides two APIs for splitting.
 
  * `train_val_test_split`: Standard random and scaffold splitting
  * `rigorous_train_val_test_split`: One in k-fold split & Randomized scaffold split
 
-The APIs support returning split indices as well as directly splitting various data formats
+The APIs support returning split indices as well as directly splitting various data formats.
 
  * Regular python `list`
  * `numpy.ndarray`, `pandas.DataFrame`, `pandas.Series`
