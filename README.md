@@ -20,12 +20,7 @@ pip install -r requirements.txt
 
 ## Downloading Datasets
 
-We provide the script for downloading the raw datasets from the official website of [MoleculeNet](https://moleculenet.org/).
-
-```bash
-cd src/MoleculeBench/dataset/raw
-bash download.sh
-```
+We provide raw and processed files of eight classification datasets from [MoleculeNet](https://moleculenet.org/). The script for downloading the datasets is located at `src/MoleculeBench/dataset/raw/download.sh`
 
 For `zinc2m`, please [download](https://drive.google.com/file/d/1Y45zTHwWqtuliaTHRsLkr4RUtHW_jlLn/view?usp=sharing) manually and put the `.csv` file under `src/MoleculeBench/raw`.
 
@@ -43,7 +38,7 @@ This package supports **loading** and **splitting** datasets.
 ### Loading
 Load datasets or SMILES in datasets after three steps of pre-processing.
 
-- Filter SMILES that contains asterisks (*), which causes size mismatch with pretrained embeddings
+- Filter SMILES with "*", which causes size mismatch with pretrained embeddings
 - Filter unparsable SMILES
 - Canonicalize SMILES
 
