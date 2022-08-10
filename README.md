@@ -5,13 +5,18 @@ Benchmarking MoleculeNet datasets with unified pre-processing and data splits.
 ## Requirements
 
 - Python 3.8.13
-- pandas 1.3.4
-- numpy 1.22.1
-- torch_geometric 2.0.4
-- dgl 0.7.2
-- dgllife 0.2.8
+- For the other packages, please refer to `requirements.txt`
 
-`torch_geometric`, `dgl`, and `dgllife` are used for type checking and data splitting in `src/MoleculeBench/splitter.py`.
+```bash
+conda create --name chem python=3.8.13
+pip install -r requirements.txt
+```
+
+`torch_geometric`, `dgl`, and `dgllife` are used for type checking and data splitting in `src/MoleculeBench/splitter.py`. Tested versions are:
+
+- torch_geometric 2.0.4
+- dgl 0.5.3
+- dgllife 0.2.6
 
 ## Downloading Datasets
 
