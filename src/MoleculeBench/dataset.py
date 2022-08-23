@@ -62,4 +62,5 @@ def filtered_and_canonicalized_smiles(dataset: str) -> pd.Series:
 
 def dataset_info(dataset: str) -> Namespace:
     assert dataset in info, f'Unsupported dataset: "{dataset}".'
-    return Namespace(**info[dataset])
+    filtered_path = os.path.join(dataset_dir, 'processed', f'{dataset}.csv')
+    return Namespace(**info[dataset], filtered_path=filtered_path)
